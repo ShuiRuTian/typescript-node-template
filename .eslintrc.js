@@ -5,14 +5,17 @@ module.exports = {
     parser: "@typescript-eslint/parser",
     plugins: [
         '@typescript-eslint',
-        "react",
-        "react-hooks",
     ],
+    parserOptions: {
+        project: './tsconfig.eslint.json',
+    },
     extends: [
+        'airbnb-typescript/base',
         'eslint:recommended',
         'plugin:@typescript-eslint/recommended',
     ],
     rules: {
         "@typescript-eslint/explicit-function-return-type": "off",
+        "@typescript-eslint/ban-ts-comment": "off",
     },
 };
