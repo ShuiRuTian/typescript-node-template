@@ -4,6 +4,7 @@ module.exports = {
     },
     parser: "@typescript-eslint/parser",
     plugins: [
+        'import',
         '@typescript-eslint',
     ],
     parserOptions: {
