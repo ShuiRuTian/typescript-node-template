@@ -19,5 +19,8 @@ module.exports = {
     rules: {
         "@typescript-eslint/explicit-function-return-type": "off",
         "@typescript-eslint/ban-ts-comment": "off",
+        // this rule usualy differnt with TS formatter, open this if you are using eslint as formatter
+        "@typescript-eslint/indent": "off",
+        "@typescript-eslint/no-use-before-define": ["error", { "functions": false }]
     },
 };
